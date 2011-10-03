@@ -1,0 +1,52 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/home/indutny/.node/0.4.12/bin/npm',
+verbose cli   'start' ]
+info using npm@1.0.30
+info using node@v0.4.12
+verbose config file /home/indutny/.npmrc
+verbose config file /home/indutny/.node/0.4.12/etc/npmrc
+silly testEngine { name: 'hellossl',
+silly testEngine   subdomain: 'hellossl',
+silly testEngine   scripts: { start: 'server.js' },
+silly testEngine   main: './server.js',
+silly testEngine   version: '0.0.0-23',
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/home/indutny/Code/git/indutny/hellossl/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: true },
+silly testEngine   _id: 'hellossl@0.0.0-23',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.30',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/indutny/Code/git/indutny/hellossl/package.json
+verbose loadDefaults hellossl@0.0.0-23
+verbose run-script [ 'prestart', 'start', 'poststart' ]
+info prestart hellossl@0.0.0-23
+info start hellossl@0.0.0-23
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "server.js"
+info hellossl@0.0.0-23 Failed to exec start script
+ERR! hellossl@0.0.0-23 start: `server.js`
+ERR! `sh "-c" "server.js"` failed with 127
+ERR! 
+ERR! Failed at the hellossl@0.0.0-23 start script.
+ERR! This is most likely a problem with the hellossl package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     server.js
+ERR! You can get their info via:
+ERR!     npm owner ls hellossl
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 2.6.38-11-generic
+ERR! command "node" "/home/indutny/.node/0.4.12/bin/npm" "start"
+ERR! cwd /home/indutny/Code/git/indutny/hellossl
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.30
+verbose exit [ 1, true ]
