@@ -1,6 +1,6 @@
 {
   "name": "hellossl",
-  "subdomain": "hellossl",
+  "domain": "hellossl.com",
   "scripts": {
     "start": "server.js"
   },
