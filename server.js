@@ -6,7 +6,8 @@ https.createServer({
   key: fs.readFileSync('./certs/key.pem')
 }, function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write('hello, i know nodejitsu.')
+  res.write('hello, i know nodejitsu.\n')
+  res.write('your headers, man: ' + JSON.stringify(req.headers));
   res.end();
 }).listen(8000);
 
